@@ -23,7 +23,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 @WebServlet("/")
-public class Search-Sim-Image extends SuperGluev2 {
+public class SearchSimImage extends SuperGluev2 {
 
 	private static String credentialKey = "cf8ff9af4fd5323e190b6df6b730ab4919464c73";
 	//this is shirt image
@@ -70,7 +70,7 @@ public class Search-Sim-Image extends SuperGluev2 {
 	}
 	
 	public static void main(String[] args) {
-		Search-Sim-Image myclass = new Search-Sim-Image();
+		SearchSimImage myclass = new SearchSimImage();
 		
 		//****** Process method contains the key logic ******
 		JsonObject processResult = myclass.process(myclass.parameters);
@@ -138,7 +138,7 @@ public class Search-Sim-Image extends SuperGluev2 {
   	html += 
   		"<table><tr><td colspan=2>Input Image\r\n" +
   		"<br>\r\n" +
-  		"<img src=\"" + Search-Sim-Image.image + "\" style=\"width:100px;height:100px;\">\r\n" +
+  		"<img src=\"" + SearchSimImage.image + "\" style=\"width:100px;height:100px;\">\r\n" +
   		"<br>\r\n" +
   		"Output Similar Images\r\n" +
   		"</td></tr>\r\n";
